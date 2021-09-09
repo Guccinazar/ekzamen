@@ -18,54 +18,76 @@
             <img src="./images/Movies logo.svg" alt="Movies">
         </h1>
         <div class="navbar-section_link">
-            <a class="navbar-section_item" href="#">Browse</a>
-            <a class="navbar-section_item" href="#">Movies</a>
-            <a class="navbar-section_item" href="#">TV Shows</a>
-            <a class="navbar-section_item" href="#">News</a>
+            <a class="navbar-section_item" href="#Browse">Browse</a>
+            <a class="navbar-section_item" href="#Movies">Movies</a>
+            <a class="navbar-section_item" href="#TV Shows">TV Shows</a>
+            <a class="navbar-section_item" href="https://www.bbc.com/ukrainian" target="blank">News</a>
         </div>
     </nav>
     <header class="cover-section">
-        <div>
+        <div class="cover-section_items">
             <img src="./images/daredevil logo.png" alt="Daredevil">
-            <h1>NETFLIX</h1>
+            <h2>NETFLIX</h2>
             <p>
                 Matt Murdock, with his other senses superhumanly<br> 
                 enhanced,fights crime as a blind Lawyer <br> 
                 by day, and vigilante by night.
             </p>
             <span>54min  |  Action, Crime, Drama  |   TV Series (2015 – )</span><br>
-            <button>WATCH EPISODE</button>
-            <select name="" id="">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
+            <div class="cover-section_button">
+                <button>WATCH EPISODE</button>
+                <select name="" id="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
         </div>
     </header>
     <main class="content-section">
-        <section class="content-section_movies">
+        <section class="content-section_movies" id="Movies">
             <h4 class="content-section_movies_title">Popular Movies</h4>
             <ul class="content-section_movies__item">
-                <li><img src="./images/Popular Movies/Calque 2.png" alt="Batman vs Superman"></li>
-                <li><img src="./images/Popular Movies/Calque 3.png" alt="Civil War MArvel"></li>
-                <li><img src="./images/Popular Movies/Calque 4.png" alt="Mad Max"></li>
-                <li><img src="./images/Popular Movies/Calque 5.png" alt="Hill Tatum 22"></li>
-                <li><img src="./images/Popular Movies/Calque 6.png" alt="Star Wars"></li>
-                <li><img src="./images/Popular Movies/Calque 7.png" alt="The Suicide Squad"></li>
+                <li><a href="#"><img class="content-section_movies__img" src="./images/Popular Movies/Calque 2.png" alt="Batman vs Superman"></a></li>
+                <li><a href="#"><img class="content-section_movies__img" src="./images/Popular Movies/Calque 3.png" alt="Civil War MArvel"></a></li>
+                <li><a href="#"><img class="content-section_movies__img" src="./images/Popular Movies/Calque 4.png" alt="Mad Max"></a></li>
+                <li><a href="#"><img class="content-section_movies__img" src="./images/Popular Movies/Calque 5.png" alt="Hill Tatum 22"></a></li>
+                <li><a href="#"><img class="content-section_movies__img" src="./images/Popular Movies/Calque 6.png" alt="Star Wars"></a></li>
+                <li><a href="#"><img class="content-section_movies__img" src="./images/Popular Movies/Calque 7.png" alt="The Suicide Squad"></a></li>
             </ul>
         </section>
-        <section>
+        <section class="content-section_movies" id="TV Shows">
             <h4 class="content-section_movies_title">Popular TV Show</h4>
-            <ul class="content-section_movies">
-                <li><img src="./images/Popular TV Shows/Calque 8.png" alt="The Originals"></li>
-                <li><img src="./images/Popular TV Shows/Calque 9.png" alt="The Magicians"></li>
-                <li><img src="./images/Popular TV Shows/Calque 10.png" alt="MR. Robot"></li>
-                <li><img src="./images/Popular TV Shows/Calque 11.png" alt="The Wolking Dead"></li>
-                <li><img src="./images/Popular TV Shows/Calque 12.png" alt="The Breaking Bad"></li>
-                <li><img src="./images/Popular TV Shows/Calque 13.png" alt="Master of none"></li>
+            <ul class="content-section_movies__item">
+                <li><a href="#"><img class="content-section_movies__img" src="./images/Popular TV Shows/Calque 8.png" alt="The Originals"></a></li>
+                <li><a href="#"><img class="content-section_movies__img" src="./images/Popular TV Shows/Calque 9.png" alt="The Magicians"></a></li>
+                <li><a href="#"><img class="content-section_movies__img" src="./images/Popular TV Shows/Calque 10.png" alt="MR. Robot"></a></li>
+                <li><a href="#"><img class="content-section_movies__img" src="./images/Popular TV Shows/Calque 11.png" alt="The Wolking Dead"></a></li>
+                <li><a href="#"><img class="content-section_movies__img" src="./images/Popular TV Shows/Calque 12.png" alt="The Breaking Bad"></a></li>
+                <li><a href="#"><img class="content-section_movies__img" src="./images/Popular TV Shows/Calque 13.png" alt="Master of none"></a></li>
             </ul>
         </section>
     </main>
+    <form class="form-section" id="Browse">
+        <h3 class="form_section__title">Get the movie & TV Shows straight<br>
+            in your inbox each week
+        </h3>
+        <div class="form-section__input">
+          <input type="text"  class="form-control" value="First name">
+          <input type="text" class="form-control"  value="Email">
+        </div>
+        <div class="form-section__button">
+          <button type="submit" class="form-section__button">Subscribe</button>
+        </div>
+      </form>
+      <footer class="footer-section">
+        <img src="./images/Movies logo.svg" alt="Movies">
+        <h5>2016 Movies . All Rights Reserved</h5>
+        <div class="footer-section_text">
+            <span>Terms of service</span>     
+            <span>Privasy Policy</span>
+        </div>
+      </footer>
 </body>
 
 </html>

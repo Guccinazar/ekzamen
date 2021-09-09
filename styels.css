@@ -3,11 +3,20 @@
     src: url(./fonts/calibri-font-family/calibri-bold.ttf);
     src: url(./fonts/calibri-font-family/calibri-regular.ttf);
 }
+:root {
+    --red: #b51c1c;
+    --default-color: #ffffff;
+}
 
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
 
 .navbar-section {
     height: 88px;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -31,20 +40,186 @@
     font-family: "Calibri";
     cursor: pointer;
     text-decoration: none;
+    position: relative;
+}
+
+.navbar-section_item:after {
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 4px; 
+	background-color: #b3b2b2;
+	content: "";
+	transition: width 0.3s ease-out;
+}
+
+.navbar-section_item:hover:after,
+.navbar-section_item:focus:after {
+	width: 100%; 
 }
 
 .cover-section {
-    height: 800px;
-    width: 100%;
+    min-height: 800px;
+    width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-end;
     background-image: url(./images/img\ cover.png);
     background-repeat: no-repeat;
     background-size: 100%;
     font-size: 20px;
-    color: #ffffff;
+    color: var(--default-color);
     font-weight: 300;
     font-family: "Calibri";
+}
+
+.cover-section_items {
+    height: 100vh;
+    margin: 100px 50px 0 0;
+}
+
+.cover-section_items h2 {
+    font-size: 2em;
+    margin: 0;
+    position: relative;
+    bottom: 40px;
+    left: 235px;
+}
+
+.cover-section_items p {
+    font-size: 21px;
+    color: #dcdcdc;
+    font-weight: 300;
+    font-family: "Calibri";
+    margin-bottom: 30px;
+}
+
+.cover-section_items span {
+    font-size: 20px;
+    color: var(--default-color);
+    font-weight: 300;
+    font-family: "Calibri";
+}
+
+.cover-section_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 55px 55px 0 0;
+}
+
+.cover-section_items button {
+    width: 158px;
+    height: 41px;
+    border-radius: 5px;
+    filter: drop-shadow(8.184px 8.776px 13.5px #686868);
+    background-color: var(--red);
+    font-size: 15px;
+    color: var(--default-color);
+    font-weight: bold;
+    font-family: "Calibri";
+    position: relative;
+    left: 17px;
+}
+
+.cover-section_button select {
+    width: 46px;
+    height: 58px;
+    border-radius: 5px;
+    filter: drop-shadow(8.184px 8.776px 13.5px #686868);
+    background-color: var(--red);
+    font-size: 19px;
+    color: var(--default-color);
+    font-weight: bold;
+    font-family: "Calibri";
+}
+
+.content-section {
+    width: 100vw;
+}
+
+.content-section_movies_title {
+    width: 100vw;
+    font-size: 32px;
+    color: #5d5d5d;
+    font-family: "Calibri";
+    margin: 100px 0 40px 80px;
+}
+
+li {
+    list-style-type: none;
+}
+  
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.content-section_movies__item {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+}
+
+.content-section_movies__img:hover {
+    transition: all 0.4s ease;
+    filter: drop-shadow(8.184px 8.776px 13.5px #585858);
+}
+
+.form-section {
+    width: 100vw;
+    min-height: 442px;
+    background-color: #2a292e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form_section__title {
+    font-size: 35px;
+    color:  var(--default-color);
+    font-weight: 300;
+    font-family: "Calibri";
+    text-align: center;
+}
+
+.form-section__input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 35%;
+}
+
+.form-control {
+    width: 226px;
+    height: 49px;
+    border-radius: 5px;
+    background-color: #403f44;
+    font-size: 17px;
+    color: var(--default-color);
+    font-weight: 300;
+    font-family: "Calibri";
+    text-align: center;
+}
+
+.form-section__button {
+    width: 161px;
+    height: 36px;
+    border-radius: 10px;
+    background-color: #6ee595;
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Calibri";
+    text-align: center;
+}
+
+.footer-section {
+    width: 100vw;
+    min-height: 342px;
+    background-color: #f1f1f1;
 }
