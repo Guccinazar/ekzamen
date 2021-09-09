@@ -222,4 +222,31 @@ ul {
     width: 100vw;
     min-height: 342px;
     background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section img {
+    width: 7vw;
+    color: #3f3f3f;
+}
+
+.footer-section h5 {
+    font-size: 28px;
+    color: #5d5d5d;
+    font-family: "Calibri";
+    text-align: center;
+}
+
+.footer-section_text {
+    font-size: 25px;
+    color: #5d5d5d;
+    font-family: "Calibri";
+    text-align: center;
+}
+
+.footer-section_text span {
+    margin-right: 30px;
 }
