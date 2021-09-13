@@ -1,7 +1,7 @@
 @font-face {
     font-family: Calibri;
-    src: url(./fonts/calibri-font-family/calibri-bold.ttf);
-    src: url(./fonts/calibri-font-family/calibri-regular.ttf);
+    src: url(../fonts/calibri-font-family/calibri-bold.ttf);
+    src: url(../fonts/calibri-font-family/calibri-regular.ttf);
 }
 :root {
     --red: #b51c1c;
